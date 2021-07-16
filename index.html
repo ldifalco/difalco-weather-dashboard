@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel= "stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+
+ <!-- Search here -->
+          <h1 class="heading">How's The Weather?</h1>
+          <form>
+            <input type="text" id="city-name" placeholder="Search for a city">
+            <button type="button" id="city-search">Search</button>
+            <button type= "button" id="clear-btn">Clear</button>
+          </form>
+        </div>
+
+         <!--Todays Weather-->
+    <div id= "todays-weather" class="card">
+        <div class="card-body">
+          <h2 id="cityname"></h2>
+          <div id="img"></div>
+          <h2 id="date"></h2>
+          <p id="tempurature"></p>
+          <p id="wind"></p>
+          <p id="humidity"></p>
+          <p id="uvi"></p>
+        </div>
+      </div>
+      <!-- Future Weather-->
+      <div id= "upcoming-weather" class="card">
+        <div id="next-day" class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <div id="day-three" class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <div id="day-four" class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <div id="day-five" class="card-body">
+        </div>
+      </div>
+   
+        <!--Search History -->
+        <ul id="history" class="list">
+            <!-- Searched Cities will go here -->
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
