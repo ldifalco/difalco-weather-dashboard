@@ -30,7 +30,7 @@ currentCity= document.getElementById("city-name").value;
 document.getElementById("city-name").value="";
 
 //API Call URL
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&appid=" + APIKey + "&units=imperial";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&appid=" + APIKey + "&units=imperial";
 
 //fetch request function for API call
 fetch(queryURL)
@@ -51,7 +51,7 @@ fetch(queryURL)
             })
             .then(function(oneCallData){
                 console.log(oneCallData)
-                
+
             })
         })
     }
