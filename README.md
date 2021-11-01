@@ -1,4 +1,5 @@
-
+![](/home/lucas/Pictures/Screenshot from 2021-11-01 13-06-22.png)
+![](/home/lucas/Pictures/Screenshot from 2021-11-01 13-06-34.png)
 # difalco-weather-dashboard
 
 # Uses
