@@ -13,51 +13,63 @@
 <body>
 
 
- <!-- Search here -->
-          <h1 class="heading">How's The Weather?</h1>
-          <form>
-            <input type="text" id="city-name" placeholder="Search for a city">
-            <button type="button" id="city-search">Search</button>
-            <button type= "button" id="clear-btn">Clear</button>
-          </form>
-        </div>
-
-         <!--Todays Weather-->
-    <div id= "todays-weather" class="card">
+  <h1 id="banner">How's the Weather?</h1>
+  <div id=search-current>
+    
+    <div id="search-area">
+      <form>
+          <h2>Search for a City:</h2>
+          <input type="text" name="city" id="city" placeholder="e.g. Burlington">
+          <button id="search">Search</button>
+          <button id="clear">Clear Search History</button>
+      </form>
+    
+     
+      <ul id="search-list" class="list-group"></ul>
+    </div>
+    <div id="all-weather-cards">
+      
+      <div id="current-weather" class="card">
         <div class="card-body">
           <h2 id="cityname"></h2>
-          <div id="img"></div>
           <h2 id="date"></h2>
-          <p id="tempurature"></p>
+          <div id="img_home"></div>
+          <p id="temp"></p>
           <p id="wind"></p>
           <p id="humidity"></p>
-          <p id="uvi"></p>
+          <p id="uvi">
+          <p id="uvi-display-number"></p>
+          </p>
         </div>
       </div>
-      <!-- Future Weather-->
-      <div id= "upcoming-weather" class="card">
-        <div id="next-day" class="card-body">
+      <h2 id="forecast-label">5-Day Forecast:</h2>
+    
+      <div id="future-weather">
+        <div class="card">
+          <div id="1" class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <div id="2" class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <div id="3" class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <div id="4" class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <div id="5" class="card-body">
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div id="day-three" class="card-body">
-        </div>
-      </div>
-      <div class="card">
-        <div id="day-four" class="card-body">
-        </div>
-      </div>
-      <div class="card">
-        <div id="day-five" class="card-body">
-        </div>
-      </div>
-   
-        <!--Search History -->
-        <ul id="history" class="list">
-            <!-- Searched Cities will go here -->
-        </ul>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="script.js"></script>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
